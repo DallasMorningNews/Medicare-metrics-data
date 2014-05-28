@@ -1,17 +1,18 @@
 Medicare provider metrics data
 ==============================
 
-This is _The Dallas Morning News'_ open repository of 2012 Medicare provider billing data with procedure-specific statistical comparisons.
+This is _The Dallas Morning News'_ re-release of 2012 Medicare Part Bprovider billing data with procedure-specific statistical comparators. 
+
+With these data, you too can find statistical outliers in your state in terms of procedure use rates per Medicare patient.
 
 The raw data is broken into compressed files for each state or territory. Each is a comma-delimited file.* 
-
 
 Each row in each data table represents a provider's billings for a particular medical procedure or service in 2012.
 
 For general info on the data and a description of the provider specific fields in each table, have a look at Medicare's information [here](https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Physician-and-Other-Supplier.html).
 
 
-Some fields in these tables were calculated by _The News_:
+Additional fields in these tables were calculated by _The News_:
 
 - **total_payments**  
 
@@ -31,7 +32,7 @@ Some fields in these tables were calculated by _The News_:
 
 - **stddev_above_avg**
 
->>The number of standard deviations a provider's rate is above the national average. For _The News'_ analysis, we looked only at those providers who were more than 3 standard deviations above the national average.
+>>The number of standard deviations a provider's rate is above the national average. For _The News'_ analysis, we looked at those providers who were more than 3 standard deviations above the national average.
 
 - **variation_coefficient_serv_per_bene**
 
@@ -39,10 +40,12 @@ Some fields in these tables were calculated by _The News_:
 
 - **num_of_providers**
 
->>The number of providers included in the average to which the provider is compared to. We only looked at procedures that included more than 100 providers in the comparison.
+>>The number of providers included in the average to which the provider is compared to. We looked at procedures that included more than 100 providers in the comparison for our analysis.
 
 - **national_rank**
 
 >>How this provider's per-patient rate ranks nationally. We focused on providers in Texas whose rate ranked first nationwide.
+
+
 
 >_*createTable.sql can be used to create the table schema in PostgreSQL databases._
