@@ -1,11 +1,12 @@
-Medicare-metrics-data
-=====================
+Medicare provider metrics data
+==============================
 
-This is _The Dallas Morning News'_ open repository of 2012 Medicare provider billing data and procedure comparison statistics.
+This is _The Dallas Morning News'_ open repository of 2012 Medicare provider billing data with procedure-specific statistical comparisons.
 
-The raw data is broken into compressed files for each state or territory. Each is a comma-delimited file, escaped with double-quotation marks. 
+The raw data is broken into compressed files for each state or territory. Each is a comma-delimited file.* 
 
-Each row represents a provider's billings for a particular medical procedure or service.
+
+Each row in each data table represents a provider's billings for a particular medical procedure or service in 2012.
 
 For general info on the data and a description of the provider specific fields in each table, have a look at Medicare's information [here](https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Physician-and-Other-Supplier.html).
 
@@ -43,3 +44,5 @@ Some fields in these tables were calculated by _The News_:
 - **national_rank**
 
 >>How this provider's per-patient rate ranks nationally. We focused on providers in Texas whose rate ranked first nationwide.
+
+>_*createTable.sql can be used to create the table schema in PostgreSQL databases._

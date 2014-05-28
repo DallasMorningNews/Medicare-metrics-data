@@ -1,0 +1,22 @@
+CREATE TABLE medicare_data (
+    npi character varying(255),
+    nppes_provider_last_org_name character varying(255),
+    nppes_provider_first_name character varying(255),
+    nppes_provider_street character varying(255),
+    nppes_provider_city character varying(255),
+    nppes_provider_state character varying(255),
+    nppes_provider_zip character varying(255),
+    provider_specialty character varying(255),
+    service_billing_code character varying(255),
+    service_description character varying(255),
+    num_of_services real,
+    num_of_beneficiaries real,
+    total_payments real,
+    services_per_bene real,
+    national_avg_serv_per_bene double precision,
+    national_stddev_serv_per_bene double precision,
+    stddev_above_avg double precision,
+    variation_coefficient_serv_per_bene double precision,
+    num_of_providers bigint,
+    national_rank bigint
+);
