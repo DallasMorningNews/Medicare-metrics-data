@@ -1,5 +1,5 @@
-Medicare provider metrics data
-==============================
+Medicare provider data
+======================
 
 This is _The Dallas Morning News'_ re-release of 2012 Medicare Part B provider billing data with procedure-specific statistical comparators. 
 
@@ -36,7 +36,7 @@ Additional fields in these tables were calculated by _The News_:
 
 - **variation_coefficient_serv_per_bene**
 
->>The coefficient of variation is a normalized measure of the variability of a dataset. It's calculated by taking the standard deviation divided by the mean. We used it to compare procedures with high variability to those with low variability in a provider's practice.
+>>The coefficient of variation is a normalized measure of the variability of a dataset. It's calculated by taking the standard deviation divided by the average. We used it to compare procedures with high variability to those with low variability in a provider's practice.
 
 - **num_of_providers**
 
@@ -48,4 +48,4 @@ Additional fields in these tables were calculated by _The News_:
 
 
 
->_*createTable.sql can be used to create the table schema in PostgreSQL databases._
+_*createTable.sql can be used to create the table schema in PostgreSQL databases._
